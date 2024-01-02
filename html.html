@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="html.css">
+  <title>Learn HTML</title>
+</head>
+
+<body>
+  <div class="title-section">
+  </div>
+  <div class="container">
+    <div class="tabs">
+      <button class="homebutton" style="background-color: #ADD8E6;"><a href="code-lang.html">
+          <center> ⬅️ Back</center>
+        </a></button>
+      <br>
+      <button onclick="showContent('introduction')" data-topic="introduction">HTML Introduction</button>
+      <button onclick="showContent('basics')" data-topic="basics">Basics of HTML</button>
+      <button onclick="showContent('first-project')" data-topic="first-project">First project</button>
+    </div>
+    <div class="content">
+      <div id="introduction">
+        <h2>Introduction to HTML</h2>
+        <br>
+        <h3>What is HTML</h3>
+        <p>
+          HTML is the language used to structure content on the web. It helps you style text, insert images, make links,
+          create forms, and organize information. Everything is saved in a text file that any web browser can open. HTML
+          relies on tags to define the content's structure.
+        </p>
+        <br>
+        <h4>Features of HTML</h4>
+        <ul>
+          <li>It is platform-independent. For example, Chrome displays the same pages identically across different
+            operating systems such as Mac, Linux, and Windows.</li>
+          <br>
+          <li>Images, videos, and audio can be added to a web page (For example - YouTube shows videos on their website)
+          </li>
+          <br>
+          <li>HTML is a markup language and not a programming language.</li>
+          <br>
+          <li>It can be integrated with other languages like CSS, JavaScript, etc. to show interactive (or dynamic) web
+            pages</li>
+        </ul>
+        <h5>A beautiful analogy to understand HTML, CSS, and JavaScript:</h5>
+        <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-home/html-car-example.png"
+          width="1000" height: "1000" style="margin-top: -50px;">
+        <p>Creating a webpage is like building a car. HTML is the framework, like the car's skeleton, setting the
+          structure. CSS is the paint and style, making it look good with colors and design. JavaScript acts as the
+          engine, providing functionality and making things work, just like a car's engine powers it. In simple terms,
+          HTML shapes, CSS beautifies, and JavaScript adds life and action, much like assembling different car parts to
+          create a working vehicle.</p>
+        <br>
+
+      </div>
+      <!--Introduction tab-->
+      <div id="basics">
+        <p></p>
+        <h6>
+          <center>Basic Project</center>
+        </h6>
+        <p>
+          Lets start by creating a basic project, first, download VS Code in your device and set it up. Open a folder
+          from your device.
+          <a href="https://code.visualstudio.com/download" target=_blank><br>Download VS Code (Visual Studio Code)</a>
+          <br>
+          <img
+            src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-document-structure/vs-code-open.png"
+            width="1000" height="500">
+          <br>
+        <p>
+          Now lets download the Live Server Extension which brings webpages to life.
+        </p>
+        <video
+          src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-prerequisite/live-server-installation.mp4"
+          controls autoplay width="1000" height="500"></video>
+        </p>
+        <br>
+        <p>On opening a new file, go on and click on + icon in top left section. Create a new file, name it
+          <strong>index.html</strong> and open the file</p>
+        <p>Your code will be visible somewhat like this:</p>
+        <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/0*v06vORs02TNF_rl3.jpg" width="750"
+          height="500">
+        <br>
+        <h7>Structure of a website</h7>
+        <p>Lets understand how a website works</p>
+        <img src="https://html.com/wp-content/uploads/html-homepage-layout-demo.webp" width="750" height="500">
+        <br>
+        <p>HTML Example Structure</p>
+        <pre>
+  <code>
+    <strong>&lt;!DOCTYPE html&gt;</strong> ~ informs the web browser which HTML version is being used here 
+    <strong>&lt;html&gt;</strong> ~ start of code
+    <strong>&lt;head&gt;</strong> ~ page heading
+      <strong>&lt;title&gt;</strong> Example&lt;/title&gt; ~ title shown on the top of browser tab
+    <strong>&lt;/head&gt;</strong> ~ ending of head tag
+    <strong>&lt;body&gt;</strong> ~ the main code goes inside below
+      <strong>&lt;p&gt;</strong> This is a code example 
+~CodeMaster&lt;/p&gt; 
+    <strong>&lt;/body&gt;</strong> ~ end of body tag
+    <strong>&lt;/html&gt;</strong> ~ end of code
+  </code>
+</pre>
+        <br>
+        <p>Above is an illustration of a Code Structure in HTML</p>
+        <br>
+        <p></p>
+
+
+      </div>
+      <!--Basics tab-->
+      <div id="first-project">
+        <br>
+        <h8>
+          <center>Create your first website</center>
+        </h8>
+        <br>
+        <p>Lets continue the course by making a website about yourself!</p>
+        <br>
+        <img src="https://raw.githubusercontent.com/microsoft/vscode-livepreview/main/img/task-demo-2.gif"
+          alt="Example">
+        <h3>HTML Document Structure</h3>
+            <p>Every HTML document follows a specific structure. Here's an example of a simple HTML document structure:</p>
+            <pre>
+                <code>
+                  &lt;!DOCTYPE html&gt; <!-- Informs the web browser about the HTML version -->
+                  &lt;html&gt; <!-- Start of HTML document -->
+                  &lt;head&gt; <!-- Page heading and metadata -->
+                  &lt;title&gt;Your Page Title&lt;/title&gt; <!-- Title displayed in the browser tab -->
+                  &lt;/head&gt;
+                  &lt;body&gt; <!-- Main content of the web page -->
+                  &lt;h1&gt;Welcome to My Page</h1> <!-- Main heading -->
+                  &lt;p&gt;This is some introductory text about me.</p> <!-- Content goes here -->
+                  &lt;/body&gt;
+                  &lt;/html&gt; <!-- End of HTML document -->
+                </code>
+            </pre>
+
+            <h3>Your First HTML Page</h3>
+            <p>Now, let's create your first HTML page:</p>
+
+        <ol>
+            <li>Open a new file in your text editor (e.g., VS Code) and name it <strong>index.html</strong>.</li>
+            <li>Inside your <strong>index.html</strong> file, use the HTML structure as shown above.</li>
+            <li>Edit the title tag to give your page a unique title.</li>
+            <li>Within the &lt;h1&gt; tags, add a suitable heading.</li>
+            <li>Below the heading, use the &lt;p&gt; tag to write a brief introduction about yourself. You can include details about your interests, skills, or anything you'd like to share.</li>
+        </ol>
+
+            <h3>Adding Style</h3>
+            <p>You can make your page look more appealing by adding some CSS (Cascading Style Sheets). Here's an example of how to link an external CSS file to your HTML:</p>
+        <pre>
+            &lt;code&gt;
+            &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+            &lt;/code&gt;
+        </pre>
+
+            <p>Create a <strong>styles.css</strong> file to apply styles to your page. You can change the background color, text styles, and layout to make your page unique.</p>
+
+            <h3>Viewing Your Page</h3>
+            <p>After creating your HTML and CSS files, you can view your web page by using a local development server or simply opening the <code>index.html</code> file in your web browser.</p>
+      </div>
+      <!--Execution Tab-->
+    </div>
+  </div>
+  <script src="html.js"></script>
+</body>
+
+</html>

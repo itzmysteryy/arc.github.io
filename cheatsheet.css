@@ -1,0 +1,37 @@
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+ ul li {
+  list-style: none;
+  margin: 0 15px;
+  font-size: 1.5rem
+}
+
+ ul li a {
+  text-decoration: none; 
+   margin: ;
+}
+
+ ul li a:before {
+  color: #000000;
+}
+
+ ul li a:hover {
+  color: #0496f1;
+}
+
+ ul li:hover{
+  transform: scale(1.1);
+} 
+
+ ul h1{
+  position: center;
+  margin: 15 15px;
+}
+
+#cheatsheetfile{
+  width: 100%;
+  height: 975px;
+}

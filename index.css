@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif;
+  font-size: large;
+}
+
+
+
+/*Navigation Bar*/
+header {
+  background-color: #0076f5;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+  margin-top: 10px;
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color:#0076f5;
+  padding: 5px 20px;
+  position: relative; 
+  transition: margin-top 0.3s ease;
+}
+
+nav {
+  font-weight: bold;
+  height: 50px;
+  width: 100%;
+  transition: 0.37s ease;
+  padding: 5px 20px;
+  border: 0px solid transparent;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  text-align: center;
+}
+
+nav a {
+  color: #0076f5;
+  padding: 10px 20px;
+  position: relative; 
+  transition: top 0.2s ease, transform 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px; 
+  left: 0;
+  background: linear-gradient(135deg, 
+  #00FFFF 5%, 
+  #00E8FF 10%, 
+  #00D1FF 15%, 
+  #00BAFF 20%, 
+  #00A3FF 25%, 
+  #008CFF 30%, 
+  #0075FF 35%, 
+  #005EFF 40%, 
+  #0047FF 45%, 
+  #0030FF 50%, 
+  #0019FF 55%, 
+  #0002FF 60%, 
+  #4A00FF 65%, 
+  #6300FF 70%, 
+  #7C00FF 75%, 
+  #9500FF 80%, 
+  #AE00FF 85%, 
+  #C700FF 90%, 
+  #E000FF 95%, 
+  #FF00FF 100%
+  );
+  transform: scaleX(0); 
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover {
+  top: -5px;
+}
+
+nav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+label.logo {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  padding: 5px 20px;
+  background: linear-gradient(135deg, 
+    #00FFFF 5%, 
+    #00E8FF 10%, 
+    #00D1FF 15%, 
+    #00BAFF 20%, 
+    #00A3FF 25%, 
+    #008CFF 30%, 
+    #0075FF 35%, 
+    #005EFF 40%, 
+    #0047FF 45%, 
+    #0030FF 50%, 
+    #0019FF 55%, 
+    #0002FF 60%, 
+    #4A00FF 65%, 
+    #6300FF 70%, 
+    #7C00FF 75%, 
+    #9500FF 80%, 
+    #AE00FF 85%, 
+    #C700FF 90%, 
+    #E000FF 95%, 
+    #FF00FF 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+label.logo:hover {
+    transform: scale(1.1);
+}
+
+
+ul li a[href="askquestion.py"]::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: blue;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+ul li a[href="askquestion.py"]:hover::before {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.ask-question {
+  text-decoration: none;
+  color: #0076f5;
+  padding: 5px 20px;
+  position: relative;
+  transition: margin-top 0.3s ease;
+}
+/*Navigation bar ending css*/
+
+
+body {
+  background: black;
+  background-position: center down;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/* Coding Animation home screen*/
+.animation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.welcome-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: welcome-animation 2s ease-in-out;
+}
+
+.coding-heading {
+    font-size: 1.8rem;
+    animation: loop coding-animation 8s ease-in-out 8s forwards;
+    background: linear-gradient(135deg, 
+  #00FFFF 5%, 
+  #00E8FF 10%, 
+  #00D1FF 15%, 
+  #00BAFF 20%, 
+  #00A3FF 25%, 
+  #008CFF 30%, 
+  #0075FF 35%, 
+  #005EFF 40%, 
+  #0047FF 45%, 
+  #0030FF 50%, 
+  #0019FF 55%, 
+  #0002FF 60%, 
+  #4A00FF 65%, 
+  #6300FF 70%, 
+  #7C00FF 75%, 
+  #9500FF 80%, 
+  #AE00FF 85%, 
+  #C700FF 90%, 
+  #E000FF 95%, 
+  #FF00FF 100%
+);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@keyframes welcome-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes coding-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+/* Coding Animation of Home Screen above*/
+
+
+
+
+.codelanguages-shades {
+  font-size: 1.30rem;
+  display: inline-block;
+  background: linear-gradient(135deg, 
+  #00FFFF 5%, 
+  #00E8FF 10%, 
+  #00D1FF 15%, 
+  #00BAFF 20%, 
+  #00A3FF 25%, 
+  #008CFF 30%, 
+  #0075FF 35%, 
+  #005EFF 40%, 
+  #0047FF 45%, 
+  #0030FF 50%, 
+  #0019FF 55%, 
+  #0002FF 60%, 
+  #4A00FF 65%, 
+  #6300FF 70%, 
+  #7C00FF 75%, 
+  #9500FF 80%, 
+  #AE00FF 85%, 
+  #C700FF 90%, 
+  #E000FF 95%, 
+  #FF00FF 100%
+);
+  -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.ask-question {
+    text-decoration-color: linear-gradient(135deg, 
+  #00FFFF 5%, 
+  #00E8FF 10%, 
+  #00D1FF 15%, 
+  #00BAFF 20%, 
+  #00A3FF 25%, 
+  #008CFF 30%, 
+  #0075FF 35%, 
+  #005EFF 40%, 
+  #0047FF 45%, 
+  #0030FF 50%, 
+  #0019FF 55%, 
+  #0002FF 60%, 
+  #4A00FF 65%, 
+  #6300FF 70%, 
+  #7C00FF 75%, 
+  #9500FF 80%, 
+  #AE00FF 85%, 
+  #C700FF 90%, 
+  #E000FF 95%, 
+  #FF00FF 100%
+); /* Text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Add border-radius for rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  /* Style the emoji within the button */
+  .ask-question::before {
+    content: ""; /* Unicode for the sparkles emoji */
+    display: inline-block;
+    padding-right: 5px; /* Adjust spacing between emoji and text */
+  }
+
+h1{
+  color: white;
+}

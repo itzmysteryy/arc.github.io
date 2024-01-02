@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-family: consolas;
+}
+
+h1 {
+  font-style: georgic;
+  font-size: 200%;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    margin: 50;
+}
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #0076f5;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
+header {
+  background-color: #0076f5;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+label.logo {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  padding: 5px 20px;
+  background: linear-gradient(135deg, 
+    #00FFFF 5%, 
+    #00E8FF 10%, 
+    #00D1FF 15%, 
+    #00BAFF 20%, 
+    #00A3FF 25%, 
+    #008CFF 30%, 
+    #0075FF 35%, 
+    #005EFF 40%, 
+    #0047FF 45%, 
+    #0030FF 50%, 
+    #0019FF 55%, 
+    #0002FF 60%, 
+    #4A00FF 65%, 
+    #6300FF 70%, 
+    #7C00FF 75%, 
+    #9500FF 80%, 
+    #AE00FF 85%, 
+    #C700FF 90%, 
+    #E000FF 95%, 
+    #FF00FF 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+label.logo:hover {
+    transform: scale(1.1);
+}
+
+
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 25px;
+  left: 750px;
+  right: 100px;
+  transform: translateX(-50%);
+  margin: 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.button {
+    background: linear-gradient(135deg, 
+  #00FFFF 5%, 
+  #00E8FF 10%, 
+  #00D1FF 15%, 
+  #00BAFF 20%, 
+  #00A3FF 25%, 
+  #008CFF 30%, 
+  #0075FF 35%, 
+  #005EFF 40%, 
+  #0047FF 45%, 
+  #0030FF 50%, 
+  #0019FF 55%, 
+  #0002FF 60%, 
+  #4A00FF 65%, 
+  #6300FF 70%, 
+  #7C00FF 75%, 
+  #9500FF 80%, 
+  #AE00FF 85%, 
+  #C700FF 90%, 
+  #E000FF 95%, 
+  #FF00FF 100%
+  );
+    position: relative;
+    transition: background 0.5s ease-in-out;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, 
+  #00FFFF 5%, 
+  #00E8FF 10%, 
+  #00D1FF 15%, 
+  #00BAFF 20%, 
+  #00A3FF 25%, 
+  #008CFF 30%, 
+  #0075FF 35%, 
+  #005EFF 40%, 
+  #0047FF 45%, 
+  #0030FF 50%, 
+  #0019FF 55%, 
+  #0002FF 60%, 
+  #4A00FF 65%, 
+  #6300FF 70%, 
+  #7C00FF 75%, 
+  #9500FF 80%, 
+  #AE00FF 85%, 
+  #C700FF 90%, 
+  #E000FF 95%, 
+  #FF00FF 100%
+  ) !important;
+  transition: background 0.5s ease-in-out forwards;
+}
+
+@keyframes gradientTransition {
+    from {
+        background: linear-gradient(45deg, #24fffb, #2560e9);
+    }
+    to {
+        background: linear-gradient(45deg, #e96025, #a7ff24);
+    }
+}
